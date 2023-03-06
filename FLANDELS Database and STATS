@@ -1,0 +1,11 @@
+--Create a store database
+CREATE TABLE FLANDELS (id Integer PRIMARY KEY, name TEXT, quantity INTEGER,location INTEGER, date INTEGER); 
+INSERT INTO FLANDELS VALUES (1, "Bluip", 100, 100, 121221);
+INSERT INTO FLANDELS VALUES (2, "playrp", 1, 100, 121221);
+INSERT INTO FLANDELS VALUES (3, "friar", 100, 100, 121221);
+INSERT INTO FLANDELS VALUES (4, "trisert", 1, 100, 121221);
+INSERT INTO FLANDELS VALUES (5, "schmuck", 100, 100, 121221);
+
+
+--display the database ordered by id. 
+SELECT sum(quantity) from FLANDELS ORDER BY id
